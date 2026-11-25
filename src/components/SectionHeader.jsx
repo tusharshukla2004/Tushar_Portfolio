@@ -10,7 +10,7 @@ export default function SectionHeader({ number, tag, title, highlightedWord, des
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-      className={`max-w-3xl ${isCenter ? 'mx-auto text-center' : 'text-left'} space-y-3 mb-10 sm:mb-12`}
+      className={`max-w-3xl ${isCenter ? 'mx-auto text-center' : 'text-left'} space-y-2 mb-6 sm:mb-8`}
     >
       {/* Category Tag with Numbering */}
       <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-950/40 border border-indigo-500/25 text-[11px] font-mono tracking-wider text-indigo-300 shadow-sm shadow-indigo-950/50`}>

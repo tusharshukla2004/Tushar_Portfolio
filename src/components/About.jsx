@@ -38,7 +38,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-16 sm:py-20 relative overflow-hidden bg-[#0a0f1d]">
+    <section id="about" className="pt-6 sm:pt-8 pb-10 sm:pb-14 relative overflow-hidden bg-[#0a0f1d]">
       
       {/* Subtle ambient light */}
       <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[150px] pointer-events-none" />
@@ -56,7 +56,7 @@ export default function About() {
         />
 
         {/* 3 Pillars Grid with subtle card border motion */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 sm:mb-10">
           {pillars.map((pillar, idx) => {
             const Icon = pillar.icon;
             return (

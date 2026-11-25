@@ -32,7 +32,7 @@ export default function Skills() {
     : categories.filter(c => c.id === activeCategory);
 
   return (
-    <section id="skills" className="py-16 sm:py-20 relative overflow-hidden bg-[#080c14]">
+    <section id="skills" className="py-10 sm:py-14 relative overflow-hidden bg-[#080c14]">
       
       {/* Background ambient light */}
       <div className="absolute top-1/4 right-0 w-[500px] h-[400px] bg-indigo-600/10 rounded-full blur-[140px] pointer-events-none" />
@@ -50,7 +50,7 @@ export default function Skills() {
         />
 
         {/* Filter Pills */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-10 sm:mb-12">
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-6 sm:mb-8">
           <div className="p-1 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-wrap items-center gap-1 shadow-inner shadow-indigo-950/20">
             <button
               onClick={() => setActiveCategory('all')}

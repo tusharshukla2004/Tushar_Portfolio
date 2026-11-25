@@ -236,24 +236,83 @@ export const portfolioData = {
 
   education: [
     {
+      id: "btech-cse",
       institution: "United College of Engineering and Research",
       location: "Prayagraj, Uttar Pradesh",
       degree: "Bachelor of Technology (B.Tech)",
       field: "Computer Science and Engineering",
       duration: "2022 – 2026",
       score: "CGPA: 7.5",
+      scoreLabel: "Cumulative GPA",
+      standing: "First Class Technical Track",
       type: "Undergraduate",
-      description: "Focusing on Core Computer Science principles, Data Structures & Algorithms, Database Management Systems, Computer Networks, and Object-Oriented Software Design."
+      affiliation: "Dr. A.P.J. Abdul Kalam Technical University (AKTU)",
+      status: "Active Enrolment • Final Year",
+      badge: "UNDERGRADUATE DEGREE • CSE CORE",
+      description: "Pursuing rigorous Computer Science and Engineering curriculum covering computational theory, algorithms, database architectures, operating systems, networks, and production-grade software engineering.",
+      pipeline: [
+        { step: "01. Foundations & Math", desc: "Discrete Math, Engineering Calculus & Digital Logic" },
+        { step: "02. Core Systems & DSA", desc: "Data Structures, Algorithms, DBMS & Operating Systems" },
+        { step: "03. Applied Engineering", desc: "OOP (Java/C++), Computer Networks & Web Architectures" }
+      ],
+      courses: [
+        "Data Structures & Algorithms",
+        "Database Management Systems (DBMS)",
+        "Operating Systems",
+        "Computer Networks",
+        "Object-Oriented Programming (OOP)",
+        "Software Engineering",
+        "Theory of Computation",
+        "System Architecture"
+      ],
+      metrics: [
+        { label: "Program", value: "B.Tech (4 Yrs)" },
+        { label: "Discipline", value: "CSE Core" },
+        { label: "Academic Standing", value: "First Class" }
+      ],
+      highlights: [
+        "Rigorous mastery of algorithmic complexity, data structures, and relational database systems.",
+        "Demonstrated technical execution across production full-stack MERN & AI project architectures.",
+        "Consistently maintained 7.5 CGPA alongside hands-on software development and internship contributions."
+      ]
     },
     {
+      id: "senior-secondary",
       institution: "Jwala Devi Saraswati Vidya Mandir Inter College",
       location: "Prayagraj, Uttar Pradesh",
       degree: "Class XII (Senior Secondary)",
       field: "UP Board (PCM)",
       duration: "2021",
       score: "88.8%",
+      scoreLabel: "Board Examination Score",
+      standing: "Distinction Honors (Science Track)",
       type: "Schooling",
-      description: "Completed higher secondary education with distinction, demonstrating solid foundations in Physics, Chemistry, and Mathematics."
+      affiliation: "UP State Board of High School and Intermediate Education",
+      status: "Completed with Distinction",
+      badge: "SENIOR SECONDARY • SCIENCE (PCM)",
+      description: "Completed higher secondary schooling with high distinction, establishing a solid theoretical and analytical problem-solving foundation across Physics, Chemistry, and Advanced Mathematics.",
+      pipeline: [
+        { step: "01. Physics Mastery", desc: "Mechanics, Electromagnetism, Wave Theory & Modern Physics" },
+        { step: "02. Pure Mathematics", desc: "Differential Calculus, Coordinate Geometry, Matrices & Vectors" },
+        { step: "03. Chemical Principles", desc: "Physical Chemistry, Organic Synthesis & Reaction Kinetics" }
+      ],
+      courses: [
+        "Physics",
+        "Chemistry",
+        "Advanced Mathematics",
+        "Analytical Problem Solving",
+        "Scholastic Aptitude"
+      ],
+      metrics: [
+        { label: "Track", value: "Senior Secondary" },
+        { label: "Stream", value: "Science (PCM)" },
+        { label: "Result", value: "88.8% Distinction" }
+      ],
+      highlights: [
+        "Graduated with 88.8% aggregate, earning distinction honors across Physics, Chemistry, and Mathematics.",
+        "Cultivated rigorous mathematical reasoning and analytical problem formulation skills.",
+        "Strong scholastic standing with consistent top-tier percentile performance in state board examinations."
+      ]
     }
   ]
 };

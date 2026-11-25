@@ -32,7 +32,7 @@ export default function Projects() {
     : projects.filter(p => p.id !== 'ai-resume-optimizer' && (p.category.includes('E-Commerce') || p.category.includes('Full Stack') || p.id === 'sovereign-barbershop' || p.id === 'shopwave' || p.id === 'smart-study'));
 
   return (
-    <section id="projects" className="py-16 sm:py-20 relative overflow-hidden bg-[#080c14]">
+    <section id="projects" className="py-10 sm:py-14 relative overflow-hidden bg-[#080c14]">
       {/* Background Architectural Grid */}
       <div className="absolute inset-0 bg-dot-pattern opacity-40 pointer-events-none" />
       
@@ -52,7 +52,7 @@ export default function Projects() {
         />
 
         {/* Filter Navigation Tabs */}
-        <div className="flex items-center justify-center gap-2 mb-10 sm:mb-12">
+        <div className="flex items-center justify-center gap-2 mb-6 sm:mb-8">
           <div className="p-1 rounded-2xl bg-slate-900/80 border border-slate-800 flex items-center gap-1 shadow-inner shadow-indigo-950/20">
             <button
               onClick={() => setActiveTab('all')}

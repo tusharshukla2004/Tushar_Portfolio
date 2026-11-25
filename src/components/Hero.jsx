@@ -27,7 +27,7 @@ export default function Hero({ onOpenResume }) {
   };
 
   return (
-    <section id="home" className="relative min-h-screen pt-28 pb-12 sm:pb-16 flex items-center justify-center overflow-hidden bg-[#080c14]">
+    <section id="home" className="relative pt-24 sm:pt-28 pb-4 sm:pb-6 flex flex-col justify-center overflow-hidden bg-[#080c14]">
       
       {/* Background Architectural Patterns */}
       <div className="absolute inset-0 bg-grid-pattern opacity-70 pointer-events-none" />
@@ -252,7 +252,7 @@ export default function Hero({ onOpenResume }) {
         </motion.div>
 
         {/* Scroll Indicator */}
-        <div className="mt-10 sm:mt-12 text-center">
+        <div className="mt-4 sm:mt-5 text-center">
           <a
             href="#about"
             className="inline-flex flex-col items-center gap-1 text-slate-500 hover:text-cyan-400 transition-colors"
