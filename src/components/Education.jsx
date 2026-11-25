@@ -7,7 +7,7 @@ export default function Education() {
   const { education } = portfolioData;
 
   return (
-    <section id="education" className="py-28 relative overflow-hidden bg-[#0a0f1d]">
+    <section id="education" className="py-16 sm:py-20 relative overflow-hidden bg-[#0a0f1d]">
       
       {/* Background ambient light */}
       <div className="absolute top-1/2 right-1/4 w-[500px] h-[350px] bg-indigo-600/10 rounded-full blur-[140px] pointer-events-none" />

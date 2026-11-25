@@ -38,7 +38,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-28 relative overflow-hidden bg-[#0a0f1d]">
+    <section id="about" className="py-16 sm:py-20 relative overflow-hidden bg-[#0a0f1d]">
       
       {/* Subtle ambient light */}
       <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[150px] pointer-events-none" />
