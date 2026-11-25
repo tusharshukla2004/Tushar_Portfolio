@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, FileText, Terminal, MapPin, Sparkles, ChevronDown, Check, Code2 } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
+import ButterflyDrift from './ButterflyDrift';
 
 export default function Hero({ onOpenResume }) {
   const { personal } = portfolioData;
@@ -29,8 +30,27 @@ export default function Hero({ onOpenResume }) {
   return (
     <section id="home" className="relative pt-24 sm:pt-28 pb-4 sm:pb-6 flex flex-col justify-center overflow-hidden bg-[#080c14]">
       
+      {/* Interactive Butterfly Drift WebGL Canvas */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <ButterflyDrift
+          background="transparent"
+          baseColor="#00FFE8"
+          accentColor="#6366F1"
+          density={65}
+          size={50}
+          speed={75}
+          flap={8}
+          wander={25}
+          depth={100}
+          hover={140}
+          reach={28}
+          vignette={0}
+          style={{ width: '100%', height: '100%' }}
+        />
+      </div>
+
       {/* Background Architectural Patterns */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-70 pointer-events-none" />
+      <div className="absolute inset-0 bg-grid-pattern opacity-60 pointer-events-none z-0" />
       
       {/* Dynamic Linear / Vercel Colored Ambient Glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[380px] bg-gradient-to-r from-indigo-500/15 via-purple-500/10 to-cyan-500/15 rounded-full blur-[140px] pointer-events-none" />
