@@ -161,7 +161,19 @@ export default function ResumeModal({ isOpen, onClose }) {
               {projects.map((proj, idx) => (
                 <div key={idx} className="space-y-1">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between text-xs sm:text-sm">
-                    <span className="font-bold text-white">{proj.title}</span>
+                    <div className="flex items-center gap-2">
+                      <span className="font-bold text-white">{proj.title}</span>
+                      {proj.links?.live && proj.links.live !== '#' && (
+                        <a
+                          href={proj.links.live}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-[10px] font-mono text-cyan-400 hover:text-cyan-300 hover:underline"
+                        >
+                          [Live Demo]
+                        </a>
+                      )}
+                    </div>
                     <span className="text-[11px] font-mono text-cyan-300">{proj.tags.slice(0, 4).join(', ')}</span>
                   </div>
                   <ul className="list-disc list-inside space-y-1 text-xs text-slate-300 pt-1">

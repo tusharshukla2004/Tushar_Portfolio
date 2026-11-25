@@ -47,6 +47,7 @@ export const portfolioData = {
           { name: "Zustand", level: "Lightweight State Store", badge: "State" },
           { name: "Tailwind CSS", level: "Modern Utility-first Styling", badge: "Styling" },
           { name: "Context API", level: "Scoped State & Hooks", badge: "React" },
+          { name: "Recharts", level: "Data Visualization & Heatmaps", badge: "Charts" },
           { name: "Responsive Design", level: "Mobile-First & Fluid UX", badge: "UX" },
         ]
       },
@@ -136,10 +137,34 @@ export const portfolioData = {
 
   projects: [
     {
+      id: "sovereign-barbershop",
+      title: "Sovereign Barbershop – Luxury Salon & Queue Management Platform",
+      tagline: "Luxury Salon & Digital Queue Management Platform with Deterministic Scheduling",
+      category: "Full Stack & E-Commerce",
+      featured: true,
+      image: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80",
+      description: "Developed Sovereign Barbershop, a full-stack salon management platform using React, Node.js, Express, and MongoDB, featuring real-time appointment booking, a live digital walk-in queue, dynamic pricing, and role-based staff dashboards.",
+      tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Redux Toolkit", "Tailwind CSS"],
+      metrics: [
+        { label: "Scheduling Engine", value: "Zero Double-Booking" },
+        { label: "Booking Pipeline", value: "Frictionless 4-Step" },
+        { label: "Security & Mgmt", value: "Passwordless Tokenized" }
+      ],
+      highlights: [
+        "Developed Sovereign Barbershop, a full-stack salon management platform using React, Node.js, Express, and MongoDB, featuring real-time appointment booking, a live digital walk-in queue, dynamic pricing, and role-based staff dashboards.",
+        "Engineered a frictionless 4-step booking flow with promo code validation and calendar sync, implementing secure cryptographic tokenized links for passwordless customer appointment management (rescheduling and cancellations).",
+        "Implemented a deterministic scheduling engine to eliminate double-booking conflicts, interactive business analytics using Recharts (revenue and peak-hour heatmaps), and 1-tap WhatsApp reminder workflows."
+      ],
+      links: {
+        github: "https://github.com/tusharshukla2004",
+        live: "https://barbershop123-roan.vercel.app/"
+      }
+    },
+    {
       id: "ai-resume-optimizer",
       title: "AI Resume Optimizer",
       tagline: "Intelligent ATS scoring, context-aware rewriting & automated PDF generator",
-      category: "AI & Full Stack",
+      category: "AI & LLM",
       featured: true,
       image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=1200&q=80",
       description: "An AI-powered web platform that bridges job seekers and Applicant Tracking Systems. It parses job descriptions, analyzes user resumes, computes automated ATS compatibility scores, and uses Google Gemini to rewrite resume sections contextually.",
@@ -163,7 +188,7 @@ export const portfolioData = {
       id: "shopwave",
       title: "ShopWave – Full Stack E-Commerce",
       tagline: "Scalable modern online store with secure payments & multi-role dashboards",
-      category: "Full Stack",
+      category: "Full Stack & E-Commerce",
       featured: true,
       image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=1200&q=80",
       description: "Comprehensive end-to-end e-commerce solution featuring product browsing, advanced filtering, persistent cart & wishlist, Razorpay checkout, and separate administrative dashboards for vendors and site managers.",
@@ -180,7 +205,7 @@ export const portfolioData = {
       ],
       links: {
         github: "https://github.com/tusharshukla2004",
-        live: "https://shopwave-demo.example.com"
+        live: "https://shopwave-nine.vercel.app/"
       }
     },
     {
@@ -204,7 +229,7 @@ export const portfolioData = {
       ],
       links: {
         github: "https://github.com/tusharshukla2004",
-        live: "#"
+        live: "https://smart-study-xqyl.vercel.app/"
       }
     }
   ],
