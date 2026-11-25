@@ -397,8 +397,8 @@ export default function ButterflyDrift(props) {
             const v = vRef.current;
 
             const dpr = Math.min(window.devicePixelRatio || 1, MAX_DPR);
-            const cw = sizeRef.current.w || canvas.clientWidth || 1200;
-            const ch = sizeRef.current.h || canvas.clientHeight || 800;
+            const cw = sizeRef.current.w || canvas.clientWidth || (typeof window !== "undefined" ? window.innerWidth : 1200);
+            const ch = sizeRef.current.h || canvas.clientHeight || (typeof window !== "undefined" ? window.innerHeight : 800);
             const bw = Math.max(1, Math.round(cw * dpr));
             const bh = Math.max(1, Math.round(ch * dpr));
             if (canvas.width !== bw || canvas.height !== bh) {

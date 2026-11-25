@@ -32,7 +32,7 @@ export default function Skills() {
     : categories.filter(c => c.id === activeCategory);
 
   return (
-    <section id="skills" className="py-10 sm:py-14 relative overflow-hidden bg-[#080c14]">
+    <section id="skills" className="py-10 sm:py-14 relative overflow-hidden bg-transparent">
       
       {/* Background ambient light */}
       <div className="absolute top-1/4 right-0 w-[500px] h-[400px] bg-indigo-600/10 rounded-full blur-[140px] pointer-events-none" />

@@ -26,7 +26,7 @@ export default function Education() {
     : education.filter(e => e.type === 'Schooling');
 
   return (
-    <section id="education" className="py-10 sm:py-14 relative overflow-hidden bg-[#0a0f1d]">
+    <section id="education" className="py-10 sm:py-14 relative overflow-hidden bg-transparent">
       
       {/* Background Architectural Patterns */}
       <div className="absolute inset-0 bg-dot-pattern opacity-40 pointer-events-none" />

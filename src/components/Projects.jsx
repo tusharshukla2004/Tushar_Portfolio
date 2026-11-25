@@ -32,7 +32,7 @@ export default function Projects() {
     : projects.filter(p => p.id !== 'ai-resume-optimizer' && (p.category.includes('E-Commerce') || p.category.includes('Full Stack') || p.id === 'sovereign-barbershop' || p.id === 'shopwave' || p.id === 'smart-study'));
 
   return (
-    <section id="projects" className="py-10 sm:py-14 relative overflow-hidden bg-[#080c14]">
+    <section id="projects" className="py-10 sm:py-14 relative overflow-hidden bg-transparent">
       {/* Background Architectural Grid */}
       <div className="absolute inset-0 bg-dot-pattern opacity-40 pointer-events-none" />
       
@@ -201,9 +201,47 @@ export default function Projects() {
 
                   </div>
 
-                  {/* Right Column: Simulated Live Salon & Queue Telemetry Preview Card */}
-                  <div className="lg:col-span-5">
-                    <div className="rounded-2xl bg-[#090e1c] border border-indigo-500/30 p-6 space-y-4 font-mono shadow-2xl shadow-indigo-950/40">
+                  {/* Right Column: Live Visual Screenshot + Simulated Salon OS Telemetry */}
+                  <div className="lg:col-span-5 space-y-4">
+                    
+                    {/* Live Platform Screenshot Window */}
+                    <div className="rounded-2xl bg-[#090e1c] border border-indigo-500/30 overflow-hidden shadow-2xl shadow-indigo-950/40 group/img">
+                      {/* Browser Mockup Window Header */}
+                      <div className="flex items-center justify-between px-4 py-2.5 bg-[#060a14] border-b border-indigo-500/20 text-[11px] font-mono">
+                        <div className="flex items-center gap-1.5">
+                          <span className="w-2.5 h-2.5 rounded-full bg-rose-500/80" />
+                          <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80" />
+                          <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80" />
+                        </div>
+                        <a
+                          href="https://barbershop123-roan.vercel.app/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[11px] text-slate-300 hover:text-cyan-300 transition-colors truncate max-w-[210px] flex items-center gap-1"
+                        >
+                          <span>barbershop123-roan.vercel.app</span>
+                          <ExternalLink className="w-3 h-3 text-cyan-400" />
+                        </a>
+                        <span className="flex items-center gap-1 text-emerald-400 text-[10px] bg-emerald-950/80 px-2 py-0.5 rounded-full border border-emerald-500/40">
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                          LIVE
+                        </span>
+                      </div>
+
+                      {/* Image Preview with Hover Zoom */}
+                      <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-950">
+                        <img
+                          src="/barbershop.jpg"
+                          alt="Sovereign Barbershop – Luxury Salon & Queue Management Platform"
+                          className="w-full h-full object-cover object-top transition-transform duration-500 group-hover/img:scale-105"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#090e1c]/80 via-transparent to-transparent pointer-events-none" />
+                      </div>
+                    </div>
+
+                    {/* Simulated Live Salon & Queue Telemetry Card */}
+                    <div className="rounded-2xl bg-[#090e1c] border border-indigo-500/30 p-5 space-y-3.5 font-mono shadow-2xl shadow-indigo-950/40">
                       
                       {/* Card Header */}
                       <div className="flex items-center justify-between border-b border-slate-800 pb-3">
@@ -218,21 +256,21 @@ export default function Projects() {
                       </div>
 
                       {/* Conflict-Free Metric */}
-                      <div className="p-4 rounded-xl bg-[#0c1324] border border-indigo-500/30 flex items-center justify-between shadow-inner">
+                      <div className="p-3.5 rounded-xl bg-[#0c1324] border border-indigo-500/30 flex items-center justify-between shadow-inner">
                         <div>
-                          <span className="text-[11px] text-slate-400 uppercase tracking-wider block">Scheduling Precision</span>
-                          <span className="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-200 to-indigo-200">
+                          <span className="text-[10px] text-slate-400 uppercase tracking-wider block">Scheduling Precision</span>
+                          <span className="text-xl sm:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-cyan-200 to-indigo-200">
                             0 Double-Booking
                           </span>
                           <span className="text-[10px] text-slate-400 block mt-0.5">Deterministic Conflict Elimination</span>
                         </div>
-                        <div className="w-12 h-12 rounded-full border-2 border-emerald-400/80 bg-emerald-950/40 flex items-center justify-center font-bold text-sm text-emerald-300 shadow-md shadow-emerald-500/20">
-                          <ShieldCheck className="w-6 h-6 text-emerald-400" />
+                        <div className="w-10 h-10 rounded-full border-2 border-emerald-400/80 bg-emerald-950/40 flex items-center justify-center font-bold text-sm text-emerald-300 shadow-md shadow-emerald-500/20">
+                          <ShieldCheck className="w-5 h-5 text-emerald-400" />
                         </div>
                       </div>
 
                       {/* Feature Checklist */}
-                      <div className="space-y-2 text-xs text-slate-300">
+                      <div className="space-y-1.5 text-[11px] text-slate-300">
                         <div className="flex items-center gap-2">
                           <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
                           <span>Frictionless 4-Step Booking & Calendar Sync</span>
@@ -255,8 +293,8 @@ export default function Projects() {
                         </div>
                       </div>
 
-                      <div className="p-3 rounded-lg bg-indigo-950/30 border border-indigo-500/20 text-[11px] text-slate-300">
-                        <span className="text-cyan-300 font-semibold">Live System:</span> Role-based staff dashboards with real-time slot synchronization and automated client follow-ups.
+                      <div className="p-2.5 rounded-lg bg-indigo-950/30 border border-indigo-500/20 text-[11px] text-slate-300">
+                        <span className="text-cyan-300 font-semibold">Live System:</span> Role-based staff dashboards with real-time slot synchronization.
                       </div>
 
                     </div>
@@ -520,9 +558,47 @@ export default function Projects() {
 
                   </div>
 
-                  {/* Right Column: Simulated Live Commerce Telemetry Preview Card */}
-                  <div className="lg:col-span-5">
-                    <div className="rounded-2xl bg-[#090e1c] border border-indigo-500/30 p-6 space-y-4 font-mono shadow-2xl shadow-indigo-950/40">
+                  {/* Right Column: Live Visual Screenshot + Simulated Commerce Telemetry */}
+                  <div className="lg:col-span-5 space-y-4">
+                    
+                    {/* Live Platform Screenshot Window */}
+                    <div className="rounded-2xl bg-[#090e1c] border border-indigo-500/30 overflow-hidden shadow-2xl shadow-indigo-950/40 group/img">
+                      {/* Browser Mockup Window Header */}
+                      <div className="flex items-center justify-between px-4 py-2.5 bg-[#060a14] border-b border-indigo-500/20 text-[11px] font-mono">
+                        <div className="flex items-center gap-1.5">
+                          <span className="w-2.5 h-2.5 rounded-full bg-rose-500/80" />
+                          <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80" />
+                          <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80" />
+                        </div>
+                        <a
+                          href="https://shopwave-nine.vercel.app/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[11px] text-slate-300 hover:text-cyan-300 transition-colors truncate max-w-[210px] flex items-center gap-1"
+                        >
+                          <span>shopwave-nine.vercel.app</span>
+                          <ExternalLink className="w-3 h-3 text-cyan-400" />
+                        </a>
+                        <span className="flex items-center gap-1 text-emerald-400 text-[10px] bg-emerald-950/80 px-2 py-0.5 rounded-full border border-emerald-500/40">
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                          LIVE
+                        </span>
+                      </div>
+
+                      {/* Image Preview with Hover Zoom */}
+                      <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-950">
+                        <img
+                          src="/shopwave.jpg"
+                          alt="ShopWave – Full Stack E-Commerce Platform"
+                          className="w-full h-full object-cover object-top transition-transform duration-500 group-hover/img:scale-105"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#090e1c]/80 via-transparent to-transparent pointer-events-none" />
+                      </div>
+                    </div>
+
+                    {/* Simulated Live Commerce Telemetry Card */}
+                    <div className="rounded-2xl bg-[#090e1c] border border-indigo-500/30 p-5 space-y-3.5 font-mono shadow-2xl shadow-indigo-950/40">
                       
                       {/* Card Header */}
                       <div className="flex items-center justify-between border-b border-slate-800 pb-3">
@@ -537,21 +613,21 @@ export default function Projects() {
                       </div>
 
                       {/* Payment Metric Box */}
-                      <div className="p-4 rounded-xl bg-[#0c1324] border border-indigo-500/30 flex items-center justify-between shadow-inner">
+                      <div className="p-3.5 rounded-xl bg-[#0c1324] border border-indigo-500/30 flex items-center justify-between shadow-inner">
                         <div>
-                          <span className="text-[11px] text-slate-400 uppercase tracking-wider block">Checkout Reliability</span>
-                          <span className="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-indigo-200 to-white">
+                          <span className="text-[10px] text-slate-400 uppercase tracking-wider block">Checkout Reliability</span>
+                          <span className="text-xl sm:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-indigo-200 to-white">
                             100% Verified
                           </span>
                           <span className="text-[10px] text-slate-400 block mt-0.5">Automated Webhook Handshake</span>
                         </div>
-                        <div className="w-12 h-12 rounded-full border-2 border-cyan-400/80 bg-cyan-950/40 flex items-center justify-center font-bold text-sm text-cyan-300 shadow-md shadow-cyan-500/20">
-                          <ShieldCheck className="w-6 h-6 text-cyan-400" />
+                        <div className="w-10 h-10 rounded-full border-2 border-cyan-400/80 bg-cyan-950/40 flex items-center justify-center font-bold text-sm text-cyan-300 shadow-md shadow-cyan-500/20">
+                          <ShieldCheck className="w-5 h-5 text-cyan-400" />
                         </div>
                       </div>
 
                       {/* Feature Checklist */}
-                      <div className="space-y-2 text-xs text-slate-300">
+                      <div className="space-y-1.5 text-[11px] text-slate-300">
                         <div className="flex items-center gap-2">
                           <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
                           <span>Dynamic Product Catalog with Live Stock Validation</span>
@@ -574,8 +650,8 @@ export default function Projects() {
                         </div>
                       </div>
 
-                      <div className="p-3 rounded-lg bg-indigo-950/30 border border-indigo-500/20 text-[11px] text-slate-300">
-                        <span className="text-cyan-300 font-semibold">Live System:</span> Production-tested e-commerce backend with zero inventory mismatch and automated order fulfilment workflows.
+                      <div className="p-2.5 rounded-lg bg-indigo-950/30 border border-indigo-500/20 text-[11px] text-slate-300">
+                        <span className="text-cyan-300 font-semibold">Live System:</span> Production-tested e-commerce backend with zero inventory mismatch.
                       </div>
 
                     </div>

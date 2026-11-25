@@ -7,7 +7,7 @@ export default function Experience() {
   const { experience } = portfolioData;
 
   return (
-    <section id="experience" className="py-10 sm:py-14 relative overflow-hidden bg-[#0a0f1d]">
+    <section id="experience" className="py-10 sm:py-14 relative overflow-hidden bg-transparent">
       
       {/* Background ambient light */}
       <div className="absolute top-1/3 left-1/4 w-[500px] h-[400px] bg-indigo-600/10 rounded-full blur-[140px] pointer-events-none" />

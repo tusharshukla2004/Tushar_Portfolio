@@ -142,7 +142,7 @@ export const portfolioData = {
       tagline: "Luxury Salon & Digital Queue Management Platform with Deterministic Scheduling",
       category: "Full Stack & E-Commerce",
       featured: true,
-      image: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80",
+      image: "/barbershop.jpg",
       description: "Developed Sovereign Barbershop, a full-stack salon management platform using React, Node.js, Express, and MongoDB, featuring real-time appointment booking, a live digital walk-in queue, dynamic pricing, and role-based staff dashboards.",
       tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Redux Toolkit", "Tailwind CSS"],
       metrics: [
@@ -190,7 +190,7 @@ export const portfolioData = {
       tagline: "Scalable modern online store with secure payments & multi-role dashboards",
       category: "Full Stack & E-Commerce",
       featured: true,
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=1200&q=80",
+      image: "/shopwave.jpg",
       description: "Comprehensive end-to-end e-commerce solution featuring product browsing, advanced filtering, persistent cart & wishlist, Razorpay checkout, and separate administrative dashboards for vendors and site managers.",
       tags: ["React.js", "Node.js", "Express.js", "MySQL", "Razorpay", "JWT", "Tailwind CSS"],
       metrics: [
